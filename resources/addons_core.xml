@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<addonCore>
+
+  <label>Communications Toolbox Support Package for BladeRF 2.0</label>
+
+  <version>0.0.12</version>
+
+  <type>Toolbox</type>
+
+  <identifier>74f50f33-3804-4659-8b5f-1d10587c8ed0</identifier>
+
+  <summary>Prototype and test software-defined radio (SDR) systems using BladeRF 2.0 with MATLAB and Simulink.</summary>
+
+  <description>----------------------------------------------------------------------------------------------------------------------------------------------
+Experimental toolbox for BladeRF 2.0 with MATLAB and Simulink (Work in Progress).
+----------------------------------------------------------------------------------------------------------------------------------------------
+This package is based on the matlab bindings for bladerf from : https://github.com/vbursucianu/bladeRF
+It has been modified to make it work with the bladeRF 2.0 and provides a convenient way to use the bladeRF 2.0 with Matlab/Simulink.
+
+# Installation requirements:
+Make sure you have libbladeRF and bladeRF-CLI installed. On windows you can easily install it via:
+https://www.nuand.com/win_installers/
+This installer should install everything in "C:\Program Files\bladeRF". In that location, delete the folder named "matlab" since this toolbox is meant to remplace it with the right files for the bladeRF 2.0 
+You can also install "libbladeRF" and "bladeRF-CLI" from source: https://github.com/vbursucianu/bladeRF
+
+# Known issues (Work in progress):
+- Rx Sampling Rate seems locked to 3 MSps for the Simulink Receiver.
+- Simulink blocs does not gives the option for channel selection....yet
+
+# Troubleshooting:
+- If the library doesn't appear in Simulink:
+ 1. Press F5 in the library browser to update the library index.
+ 2. If it still doesn't appear, make sure that the toolbox is in the matlab path.
+
+# Platform Compatibility:
+Linux and MacOS will be tested once everything works on Windows.</description>
+
+  <createdBy name="Victor Bursucianu"/>
+
+  <image>resources/screenshot.png</image>
+
+</addonCore>
